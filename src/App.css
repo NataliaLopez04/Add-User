@@ -1,0 +1,261 @@
+/* * {
+  border: 1px solid red;
+} */
+
+html {
+  height: auto;
+}
+
+body {
+  width: 100%;
+  height: 480px;
+  background-color: #0e5e6f;
+  background-size: cover;
+  padding-top: 30px;
+}
+
+#root {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*Form*/
+.App {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Selection gender*/
+.gender {
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-women {
+  border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  border: 2px solid white;
+  width: 130px;
+  margin-bottom: 1rem;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 33px;
+  height: 14px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 4px;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #e27ad8;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  transform: translateX(10px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*Form User*/
+
+.user-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+  gap: 3px;
+}
+
+.form {
+  border-radius: 25px;
+  width: 40%;
+  background-color: #3a8891;
+  box-shadow: 1px 0px 14px 2px #000;
+}
+
+/* Users */
+
+.list {
+  width: 50%;
+  margin: 0;
+}
+li {
+  color: white;
+  width: 200px;
+  list-style: none;
+  border-radius: 15px;
+  width: 80%;
+  background-color: #3a8891;
+  padding: 10px;
+  height: auto;
+  letter-spacing: 1px;
+}
+
+li:hover {
+  filter: drop-shadow(5px 5px 10px #000);
+}
+
+li:active {
+  background-color: #066163;
+}
+
+ul {
+  width: 500px;
+  height: 400px;
+  overflow-y: scroll;
+  flex-direction: column;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.button-delete,
+.button-edit {
+  background-color: transparent;
+  border: none;
+}
+
+.image-delete,
+.image-edit {
+  width: 30px;
+}
+
+.title {
+  width: auto;
+  text-align: center;
+}
+
+.image-icons {
+  width: 20px;
+}
+
+fieldset {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  border: none;
+}
+
+h1,
+h4,
+h5 {
+  margin: 3px;
+  color: white;
+  text-shadow: 3px -1px 35px #0a0a0a;
+}
+
+input,
+input::placeholder {
+  background: linear-gradient(145deg, #fdfeff, #d4d5df);
+  width: 9rem;
+  border-radius: 5px;
+  border: none;
+  height: 30px;
+  color: #0e5e6f;
+  padding-left: 10px;
+}
+
+input[type="date"] {
+  color: #0e5e6f;
+  font-family: "Roboto", sans-serif;
+  appearance: none;
+  visibility: visible;
+  padding-left: 10px;
+}
+
+.input-large {
+  width: 19.3rem;
+}
+
+/*Button*/
+
+.button-24 {
+  background: #628e90;
+  border: 1px solid #319da0;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  margin-top: 10px;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: black;
+}
+
+.button-24:active {
+  opacity: 0.5;
+}
+
+label {
+  text-align: left;
+}
+
+.buttons {
+  display: flex;
+  justify-content: end;
+}
